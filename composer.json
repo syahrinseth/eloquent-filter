@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "syahrinseth/eloquent-filter",
+    "description": "A complete robust filter function for your Laravel Eloquent",
     "keywords": [
-        ":vendor_name",
+        "syahrinseth",
         "laravel",
-        ":package_slug"
+        "eloquent-filter"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/syahrinseth/eloquent-filter",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Syahrin Seth",
+            "email": "syahrin@betterweb.dev",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "SyahrinSeth\\EloquentFilter\\": "src",
+            "SyahrinSeth\\EloquentFilter\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "SyahrinSeth\\EloquentFilter\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -51,15 +51,19 @@
         "format": "vendor/bin/pint"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": false,
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "SyahrinSeth\\EloquentFilter\\EloquentFilterServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "EloquentFilter": "SyahrinSeth\\EloquentFilter\\Facades\\EloquentFilter"
             }
         }
     },
